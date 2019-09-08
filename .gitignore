@@ -59,8 +59,11 @@ typings/
 
 # next.js build output
 .next
+
 src/**/*.js
 src/**/*.js.map
+test/**/*.js
+test/**/*.js.map
 
 # Parcel
 .cache
