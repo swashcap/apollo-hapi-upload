@@ -1,0 +1,8 @@
+{
+  "editor.tabSize": 4,
+  "files.exclude": {
+    "src/**/*.js": true,
+    "src/**/*.js.map": true
+  },
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
