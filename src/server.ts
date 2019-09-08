@@ -60,9 +60,8 @@ export const init = async () => {
 
     await Promise.all([
         server.register(Inert),
-        // Don't log during tests
         process.env.NODE_ENV !== 'test'
-            ? {
+            ? server.register({
                   options: {
                       ops: {
                           interval: 1000,
@@ -82,12 +81,12 @@ export const init = async () => {
                       },
                   },
                   plugin: Good,
-              }
+              })
             : undefined,
+        apolloServer.applyMiddleware({
+            app: server,
+        }),
     ]);
-    await apolloServer.applyMiddleware({
-        app: server,
-    });
     await apolloServer.installSubscriptionHandlers(server.listener);
 
     server.route({
