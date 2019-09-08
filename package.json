@@ -1,0 +1,23 @@
+{
+  "name": "apollo-hapi-upload",
+  "version": "1.0.0",
+  "description": "File uploads with Apollo + hapi",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swashcap/apollo-hapi-upload.git"
+  },
+  "keywords": [
+    "apollo",
+    "hapi"
+  ],
+  "author": "Cory Reed",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/swashcap/apollo-hapi-upload/issues"
+  },
+  "homepage": "https://github.com/swashcap/apollo-hapi-upload#readme"
+}
