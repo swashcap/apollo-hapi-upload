@@ -53,7 +53,7 @@ export const init = async () => {
         port: process.env.PORT || 3000,
         routes: {
             files: {
-                relativeTo: Path.resolve(__dirname, '../public'),
+                relativeTo: Path.resolve(__dirname, '../dist'),
             },
         },
     });
@@ -110,6 +110,6 @@ if (require.main === module) {
 
         await server.start();
 
-        server.log('Server running on %s', server.info.uri);
+        server.log(['info'], `Server running on ${server.info.uri}`);
     })();
 }
