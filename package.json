@@ -31,7 +31,7 @@
         "@hapi/good-squeeze": "^5.2.1",
         "@hapi/hapi": "^18.3.2",
         "@hapi/inert": "^5.2.1",
-        "apollo-server-hapi": "^2.9.3",
+        "apollo-server-hapi": "^2.14.2",
         "hard-rejection": "^2.1.0"
     },
     "devDependencies": {
